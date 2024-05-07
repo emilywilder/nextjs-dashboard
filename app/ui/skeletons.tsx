@@ -264,54 +264,48 @@ export function CustomerTableRowSkeleton() {
 
 export function CustomersTableSkeleton() {
   return (
-    <div className="w-full">
-      <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
-        Customers
-      </h1>
-      <Search placeholder="Search customers..." />
-      <div className="mt-6 flow-root">
-        <div className="overflow-x-auto">
-          <div className="inline-block min-w-full align-middle">
-            <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
-              <div className="md:hidden">
-                <CustomerModalSkeleton />
-                <CustomerModalSkeleton />
-                <CustomerModalSkeleton />
-                <CustomerModalSkeleton />
-                <CustomerModalSkeleton />
-                <CustomerModalSkeleton />
-              </div>
-              <table className="hidden min-w-full rounded-md text-gray-900 md:table">
-                <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
-                  <tr>
-                    <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                      Name
-                    </th>
-                    <th scope="col" className="px-3 py-5 font-medium">
-                      Email
-                    </th>
-                    <th scope="col" className="px-3 py-5 font-medium">
-                      Total Invoices
-                    </th>
-                    <th scope="col" className="px-3 py-5 font-medium">
-                      Total Pending
-                    </th>
-                    <th scope="col" className="px-4 py-5 font-medium">
-                      Total Paid
-                    </th>
-                  </tr>
-                </thead>
-
-                <tbody className="divide-y divide-gray-200 text-gray-900">
-                  <CustomerTableRowSkeleton />
-                  <CustomerTableRowSkeleton />
-                  <CustomerTableRowSkeleton />
-                  <CustomerTableRowSkeleton />
-                  <CustomerTableRowSkeleton />
-                  <CustomerTableRowSkeleton />
-                </tbody>
-              </table>
+    <div className="mt-6 flow-root">
+      <div className="overflow-x-auto">
+        <div className="inline-block min-w-full align-middle">
+          <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
+            <div className="md:hidden">
+              <CustomerModalSkeleton />
+              <CustomerModalSkeleton />
+              <CustomerModalSkeleton />
+              <CustomerModalSkeleton />
+              <CustomerModalSkeleton />
+              <CustomerModalSkeleton />
             </div>
+            <table className="hidden min-w-full rounded-md text-gray-900 md:table">
+              <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
+                <tr>
+                  <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
+                    Name
+                  </th>
+                  <th scope="col" className="px-3 py-5 font-medium">
+                    Email
+                  </th>
+                  <th scope="col" className="px-3 py-5 font-medium">
+                    Total Invoices
+                  </th>
+                  <th scope="col" className="px-3 py-5 font-medium">
+                    Total Pending
+                  </th>
+                  <th scope="col" className="px-4 py-5 font-medium">
+                    Total Paid
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody className="divide-y divide-gray-200 text-gray-900">
+                <CustomerTableRowSkeleton />
+                <CustomerTableRowSkeleton />
+                <CustomerTableRowSkeleton />
+                <CustomerTableRowSkeleton />
+                <CustomerTableRowSkeleton />
+                <CustomerTableRowSkeleton />
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
