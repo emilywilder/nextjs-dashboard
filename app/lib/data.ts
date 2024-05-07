@@ -177,6 +177,7 @@ export async function fetchInvoiceById(id: string) {
 }
 
 export async function fetchCustomers() {
+  noStore();
   try {
     const data = await sql<CustomerField>`
       SELECT
@@ -196,6 +197,8 @@ export async function fetchCustomers() {
 
 export async function fetchFilteredCustomers(query: string) {
   noStore();
+  console.log('Fetching filtered customers...');
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   try {
     const data = await sql<CustomersTableType>`
 		SELECT
