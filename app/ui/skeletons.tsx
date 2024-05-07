@@ -241,22 +241,29 @@ export function CustomerTableRowSkeleton() {
   return (
     <tr className="group">
       <td className="whitespace-nowrap bg-white py-5 pl-4 pr-3 text-sm text-black group-first-of-type:rounded-md group-last-of-type:rounded-md sm:pl-6">
+        {/* customer */}
         <div className="flex items-center gap-3">
+          {/* image */}
           <div className="h-8 w-8 rounded-full bg-gray-100"></div>
-          <div className="h-6 w-24 rounded bg-gray-100"></div>
+          {/* name */}
+          <div className="h-6 w-32 rounded bg-gray-100"></div>
         </div>
       </td>
+      {/* email */}
       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
-        <div className="h-6 w-32 rounded bg-gray-100"></div>
+        <div className="h-6 w-44 rounded bg-gray-100"></div>
       </td>
+      {/* total invoices */}
       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
-        <div className="h-6 w-32 rounded bg-gray-100"></div>
+        <div className="h-6 w-24 rounded bg-gray-100"></div>
       </td>
+      {/* total pending */}
       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
-        <div className="h-6 w-32 rounded bg-gray-100"></div>
+        <div className="h-6 w-24 rounded bg-gray-100"></div>
       </td>
+      {/* total paid */}
       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm group-first-of-type:rounded-md group-last-of-type:rounded-md">
-        <div className="h-6 w-32 rounded bg-gray-100"></div>
+        <div className="h-6 w-20 rounded bg-gray-100"></div>
       </td>
     </tr>
   );
